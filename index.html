@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional 3D Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">Portfolio<b>.</b></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p>Creative Developer & 3D Designer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                <div class="card-content">
+                    <h3>01</h3>
+                    <h3>Web App Design</h3>
+                    <p>An interactive, user-friendly dashboard built with modern frameworks and stunning animations.</p>
+                    <a href="#" class="project-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                <div class="card-content">
+                    <h3>02</h3>
+                    <h3>3D Branding</h3>
+                    <p>Immersive 3D web experiences using WebGL and Three.js optimized for flawless performance.</p>
+                    <a href="#" class="project-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                <div class="card-content">
+                    <h3>03</h3>
+                    <h3>E-Commerce Solution</h3>
+                    <p>A fast, responsive, secure online shopping platform with a seamless customer checkout flow.</p>
+                    <a href="#" class="project-link">Learn More →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-box">
+            <h2>Let's Build Something Great Together</h2>
+            <p>Get in touch for collaborations, projects, or just to say hello.</p>
+            <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
